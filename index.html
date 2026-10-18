@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b23">
+
+  <title>Babar &amp; Alishba | Baraat Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="intro-wait">
+
+  <!-- INTRO SCREEN: ONLY OPEN -->
+  <div id="introScreen">
+    <button id="openBtn" type="button">OPEN</button>
+  </div>
+
+  <!-- BACKGROUND MUSIC
+       Keep your MP3 in the same folder as index.html.
+       The filename below must match your actual MP3 filename. -->
+  <audio id="weddingAudio" loop preload="auto">
+    <source
+      src="new-sufi-kalam.mp3">
+  </audio>
+
+  <div class="progress" aria-hidden="true">
+    <span id="progressBar"></span>
+  </div>
+
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+
+  <main class="experience">
+
+    <!-- PAGE 1: COVER -->
+    <section class="page active cover" id="page1">
+      <div class="ornament">❧ ✦ ❧</div>
+
+      <div class="bismillah" lang="ar">
+        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+      </div>
+
+      <p class="eyebrow">IN THE NAME OF ALLAH, THE MOST MERCIFUL</p>
+      <div class="gold-rule">✦</div>
+
+      <p class="small-caps">A JOYFUL CELEBRATION OF LOVE</p>
+
+      <h1 class="script-title">Babar <span>&amp;</span> Alishba</h1>
+      <p class="cover-subtitle">ARE GETTING MARRIED</p>
+
+      <p class="invitation-line">
+        With the blessings of Allah and our families,
+        we invite you to celebrate our Baraat.
+      </p>
+
+      <div class="cover-date">
+        <span>THURSDAY</span>
+        <b>19</b>
+        <span>NOVEMBER 2026</span>
+      </div>
+
+      <h3 class="venue-name">Radiance Banquet</h3>
+      <p>Gulistan-e-Johar, Karachi</p>
+
+      <p class="cover-bottom">WITH LOVE &amp; DUAS ✿</p>
+
+      <button class="next-btn" data-next="2">
+        Open Invitation ✦
+      </button>
+
+      <div class="corner corner-left">❀</div>
+      <div class="corner corner-right">❀</div>
+    </section>
+
+    <!-- PAGE 2: ANIMATED DOORS -->
+    <section class="page doors-page" id="page2">
+      <div class="door-scene">
+
+        <div class="door door-left">
+          <div class="door-panel">❦</div>
+        </div>
+
+        <div class="door door-right">
+          <div class="door-panel">❦</div>
+        </div>
+
+        <div class="door-message">
+          <p class="eyebrow">A BLESSED BEGINNING</p>
+          <div class="bismillah" lang="ar">بِسْمِ اللَّهِ</div>
+
+          <h2 class="script-title">A beautiful new chapter</h2>
+
+          <p>Two hearts, one journey, and a lifetime of duas.</p>
+
+          <button class="next-btn" data-next="3">
+            Continue ✦
+          </button>
+        </div>
+      </div>
+
+      <button class="back-btn" data-prev="1">← Back</button>
+    </section>
+
+    <!-- PAGE 3: WEDDING DETAILS -->
+    <section class="page details-page" id="page3">
+      <div class="page-frame">
+        <div class="ornament">✦ ❧ ✦</div>
+
+        <p class="eyebrow">THE WEDDING CELEBRATION</p>
+        <h2 class="script-title">Baraat Ceremony</h2>
+
+        <div class="couple-names">
+          <div>
+            <span class="label">THE GROOM</span>
+            <h3>Babar Jamal</h3>
+            <p>Son of Akhtar Jamal</p>
+          </div>
+
+          <span class="ampersand">&amp;</span>
+
+          <div>
+            <span class="label">THE BRIDE</span>
+            <h3>Alishba Farooqui</h3>
+            <p>Daughter of Muhammad Waseem Farooqui</p>
+          </div>
+        </div>
+
+        <div class="gold-rule">❀</div>
+
+        <p class="detail-date">THURSDAY, 19 NOVEMBER 2026</p>
+        <h3 class="detail-venue">RADIANCE BANQUET</h3>
+
+        <p class="address">
+          ST-7, Johar Mor Road, Service Lane,<br>
+          Latif Cooperative Housing Society,<br>
+          Block-17, Gulistan-e-Johar, Karachi.
+        </p>
+
+        <div class="programme">
+          <div>
+            <span>✧</span>
+            <b>9:00 PM</b>
+            <small>Arrival of Barat</small>
+          </div>
+
+          <div>
+            <span>✧</span>
+            <b>10:00 PM</b>
+            <small>Dinner</small>
+          </div>
+
+          <div>
+            <span>✧</span>
+            <b>11:00 PM</b>
+            <small>Rukhsati</small>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button class="outline-btn" data-prev="2">← Previous</button>
+          <button class="next-btn" data-next="4">Find Venue ✦</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: MAP & RSVP -->
+    <section class="page map-page" id="page4">
+      <div class="page-frame map-frame">
+        <div class="ornament">✦ ❧ ✦</div>
+
+        <p class="eyebrow">WE CAN'T WAIT TO SEE YOU</p>
+        <h2 class="script-title">Join the Celebration</h2>
+
+        <h3 class="detail-venue">Radiance Banquet, Karachi</h3>
+
+        <div class="map-wrap">
+          <iframe
+            title="Wedding venue map"
+            src="https://maps.google.com/maps?q=Radiance%20Banquet%2C%20Johar%20Mor%20Road%2C%20Gulistan-e-Johar%2C%20Karachi&z=14&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <a class="outline-link"
+           href="https://www.google.com/maps/search/?api=1&query=Radiance+Banquet+Gulistan-e-Johar+Karachi"
+           target="_blank"
+           rel="noopener noreferrer">
+          Open Google Maps ↗
+        </a>
+
+        <div class="rsvp">
+          <p class="eyebrow">KINDLY RSVP</p>
+          <p>All family members are warmly invited.</p>
+
+          <div class="phone-row">
+            <a href="tel:03332539137">0333-2539137</a>
+            <span>✦</span>
+            <a href="tel:03332539134">0333-2539134</a>
+          </div>
+        </div>
+
+        <p class="closing">With love, prayers &amp; blessings</p>
+
+        <button class="outline-btn" id="restartBtn">
+          ↺ View Invitation Again
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="page-dots" aria-label="Invitation pages">
+    <button class="dot active" data-goto="1" aria-label="Page 1"></button>
+    <button class="dot" data-goto="2" aria-label="Page 2"></button>
+    <button class="dot" data-goto="3" aria-label="Page 3"></button>
+    <button class="dot" data-goto="4" aria-label="Page 4"></button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
